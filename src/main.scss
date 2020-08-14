@@ -1,0 +1,45 @@
+$gris: #5e6472;
+$celeste: #aed9e0;
+$verde: #b8f2e6;
+$amarillo: #faf3dd;
+$rojo: #ffa69e;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $celeste;
+  color: $gris;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#Formulario {
+  background: $amarillo;
+  padding: 20px 10%;
+  
+  input,
+  textarea {
+    display: block;
+  }
+  button{
+      padding: 10px;
+      margin: 35px auto 0 auto;
+  }
+}
+
+#Tabla{
+    thead{
+        background-color: $gris;
+        color:$amarillo;
+    }
+    tbody{
+        background-color:$verde;
+    }
+}

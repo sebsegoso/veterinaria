@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,
+initial-scale=1.0"
+    />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Veterinaria</h1>
+    <div id="Formulario" class="container row mx-auto">
+      <h2 class="col-12">Ingresar animales atendidos</h2>
+      <div class="col-12 col-md-6 ">
+        <h3>Datos dueño</h3>
+        <label for="dueno">Nombre: </label>
+        <input
+          type="text"
+          name="dueno"
+          id="Dueno"
+          placeholder="ej: José Pérez"
+          autofocus
+        />
+        <label for="direccion">Dirección: </label
+        ><input
+          type="text"
+          name="direccion"
+          id="Direccion"
+          placeholder="ej: Calle uno #234"
+        />
+        <label for="telefono">Teléfono: </label
+        ><input
+          type="number"
+          name="telefono"
+          id="Telefono"
+          placeholder="ej: 56912345678"
+        />
+      </div>
+      <div class="col-12 col-md-6 ">
+        <h3>Datos mascota</h3>
+        <label for="nombre">Nombre:</label>
+        <input
+          type="text"
+          name="nombre"
+          id="Nombre"
+          placeholder="ej: Pepito"
+        />
+        
+        <label for="especie">Especie: </label>
+        <input type="text" name="especie" id="Especie" placeholder="ej: Perro" list="animales">
+
+          <datalist id="animales">
+            <option value="Perro"></option>
+            <option value="Gato"></option>
+            <option value="Hurón"></option>
+            <option value="Hamster"></option>
+            <option value="Erizo de tierra"></option>
+            <option value="Pez"></option>
+            <option value="Loro"></option>
+          </datalist>
+        
+        
+        <label for="motivo">Motivo: </label>
+        <textarea
+          rows="2"
+          cols="30"
+          name="motivo"
+          id="Motivo"
+          placeholder="ej: Dolor de pata hace 5 dias"
+        ></textarea
+        >
+      </div>
+      <button class="btn-dark col-4" type="submit" id="Boton">Agregar</button>
+      
+    </div>
+    <div id="Tabla" class="container-fluid">
+      <h2>Animales atendidos</h2>
+      <table class="table">
+        <thead >
+          <tr>
+            <th scope="col">Nombre dueño</th>
+            <th scope="col">Dirección</th>
+            <th scope="col">Teléfono</th>
+            <th scope="col">Nombre animal</th>
+            <th scope="col">Especie</th>
+            <th scope="col">Motivo</th>
+            <th scope="col">id</th>
+          </tr>
+        </thead>
+        <tbody id="Lista">
+          <tr>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
+</html>

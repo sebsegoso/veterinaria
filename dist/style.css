@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #aed9e0;
+  color: #5e6472;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+#Formulario {
+  background: #faf3dd;
+  padding: 20px 10%;
+}
+#Formulario input,
+#Formulario textarea {
+  display: block;
+}
+#Formulario button {
+  padding: 10px;
+  margin: 35px auto 0 auto;
+}
+
+#Tabla thead {
+  background-color: #5e6472;
+  color: #faf3dd;
+}
+#Tabla tbody {
+  background-color: #b8f2e6;
+}
+
+/*# sourceMappingURL=style.css.map */
